@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.icons": "classic",
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Ubuntu Mono', 'Consolas', 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 18,
+    "zenMode.hideTabs": false,
+    "editor.multiCursorModifier": "ctrlCmd"
+}
