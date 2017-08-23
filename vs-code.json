@@ -10,5 +10,7 @@
     "editor.fontSize": 13,
     "editor.lineHeight": 18,
     "zenMode.hideTabs": false,
-    "editor.multiCursorModifier": "ctrlCmd"
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
+    "editor.quickSuggestionsDelay": 1000
 }
