@@ -11,6 +11,11 @@
     "editor.lineHeight": 18,
     "zenMode.hideTabs": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
-    "editor.quickSuggestionsDelay": 1000
+    "editor.quickSuggestionsDelay": 1500,
+    "beautify.config": {
+        "indent_with_tabs": true
+    },
+    "scss.colorDecorators.enable": false,
+    "emmet.triggerExpansionOnTab": true,
+    "alignment.operatorPadding": "left"
 }
