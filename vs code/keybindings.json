@@ -36,5 +36,65 @@
         "key": "ctrl+up",
         "command": "-scrollLineUp",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "f9",
+        "command": "editor.action.sortLinesAscending"
+    },
+    {
+        "key": "shift+f9",
+        "command": "editor.action.sortLinesDescending"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "incrementor.decByTenth"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "-incrementor.decByTenth"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "incrementor.decByTen"
+    },
+    {
+        "key": "ctrl+alt+win+down",
+        "command": "-incrementor.decByTen"
+    },
+    {
+        "key": "alt+up",
+        "command": "incrementor.incByTenth"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "-incrementor.incByTenth"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "incrementor.incByTen"
+    },
+    {
+        "key": "ctrl+alt+win+up",
+        "command": "-incrementor.incByTen"
     }
 ]
