@@ -15,7 +15,7 @@
     "beautify.config": {
         "indent_with_tabs": true
     },
-    "scss.colorDecorators.enable": false,
     "emmet.triggerExpansionOnTab": true,
-    "alignment.operatorPadding": "left"
+    "alignment.operatorPadding": "left",
+    "editor.formatOnPaste": true
 }
