@@ -1,41 +1,44 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
-        "key": "ctrl+shift+g",
-        "command": "editor.emmet.action.wrapWithAbbreviation"
-    },
-    {
-        "key": "ctrl+alt+s",
-        "command": "workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+k s",
-        "command": "-workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+k ctrl+f",
-        "command": "editor.action.formatSelection",
-        "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "scrollLineDown",
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+down",
-        "command": "-scrollLineDown",
+        "key": "ctrl+cmd+up",
+        "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+pageup",
-        "command": "scrollLineUp",
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+up",
-        "command": "-scrollLineUp",
+        "key": "ctrl+cmd+down",
+        "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "f9",
@@ -46,24 +49,36 @@
         "command": "editor.action.sortLinesDescending"
     },
     {
-        "key": "ctrl+shift+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+pageup",
+        "command": "scrollLineUp",
+        "when": "editorTextFocus"
     },
     {
-        "key": "alt+down",
-        "command": "-editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+alt+up",
+        "command": "-scrollLineUp",
+        "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+pagedown",
+        "command": "scrollLineDown",
+        "when": "editorTextFocus"
     },
     {
-        "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+alt+down",
+        "command": "-scrollLineDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "incrementor.decByOne"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-incrementor.decByOne"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.emmet.action.decrementNumberByOne"
     },
     {
         "key": "alt+down",
@@ -74,12 +89,20 @@
         "command": "-incrementor.decByTenth"
     },
     {
-        "key": "shift+alt+down",
+        "key": "alt+down",
+        "command": "editor.emmet.action.decrementNumberByOneTenth"
+    },
+    {
+        "key": "alt+cmd+down",
         "command": "incrementor.decByTen"
     },
     {
-        "key": "ctrl+alt+win+down",
+        "key": "ctrl+alt+cmd+down",
         "command": "-incrementor.decByTen"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "editor.emmet.action.decrementNumberByTen"
     },
     {
         "key": "alt+up",
@@ -90,11 +113,31 @@
         "command": "-incrementor.incByTenth"
     },
     {
-        "key": "shift+alt+up",
+        "key": "alt+up",
+        "command": "editor.emmet.action.incrementNumberByOneTenth"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "incrementor.incByOne"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-incrementor.incByOne"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.emmet.action.incrementNumberByOne"
+    },
+    {
+        "key": "alt+cmd+up",
         "command": "incrementor.incByTen"
     },
     {
-        "key": "ctrl+alt+win+up",
+        "key": "ctrl+alt+cmd+up",
         "command": "-incrementor.incByTen"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "editor.emmet.action.incrementNumberByTen"
     }
 ]
