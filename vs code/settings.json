@@ -11,11 +11,10 @@
     "editor.lineHeight": 18,
     "zenMode.hideTabs": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.quickSuggestionsDelay": 1500,
+    "editor.snippetSuggestions": "top",
     "beautify.config": {
         "indent_with_tabs": true
     },
     "emmet.triggerExpansionOnTab": true,
-    "alignment.operatorPadding": "left",
     "editor.formatOnPaste": true
 }
